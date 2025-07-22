@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphical Password Vault - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-lock"></i> Graphical Password Vault</h1>
+            <p>A secure digital vault that can be accessed by anyone who knows the correct image pattern</p>
+        </header>
+        
+        <div class="page active" id="auth-page">
+            <div class="page-header">
+                <h2><i class="fas fa-fingerprint"></i> Unlock the Vault</h2>
+            </div>
+            
+            <div class="page-content">
+                <div class="instructions">
+                    <h3><i class="fas fa-info-circle"></i> How to Access</h3>
+                    <ul>
+                        <li>Select the correct sequence of 4 images to unlock the vault</li>
+                        <li>Anyone with knowledge of this pattern can access the vault</li>
+                        <li>After 3 failed attempts, the vault will temporarily lock</li>
+                    </ul>
+                </div>
+                
+                <div class="grid-container">
+                    <div class="pattern-grid" id="pattern-grid"></div>
+                    <div class="pattern-indicator" id="pattern-indicator">Selected: None</div>
+                </div>
+                
+                <div class="password-display" id="pattern-display">
+                    Pattern Sequence: Not set yet
+                </div>
+                
+                <div class="attempts" id="attempt-counter">
+                    Attempts remaining: 3
+                </div>
+                
+                <button class="btn" id="unlock-btn">
+                    <i class="fas fa-lock-open"></i> Unlock Vault
+                </button>
+                <button class="btn reset" id="reset-btn">
+                    <i class="fas fa-redo"></i> Reset Pattern
+                </button>
+                
+                <div class="action-links">
+                    <a href="forgot-password.html" id="forgot-link"><i class="fas fa-question-circle"></i> Forgot Pattern?</a>
+                </div>
+                
+                <div class="status" id="auth-status"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>
