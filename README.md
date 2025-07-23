@@ -63,9 +63,6 @@ graphical-password-vault/
 └── forgot-password.html          # Password recovery page
 Setup Instructions
 Clone the repository:
-
-bash
-git clone https://github.com/your-username/graphical-password-vault.git
 Open the project folder:
 
 bash
