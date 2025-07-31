@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,59 +13,37 @@
             <h1><i class="fas fa-lock"></i> Graphical Password Vault</h1>
             <p>Secure digital vault containing confidential information</p>
         </header>
-        
+
         <div class="page active" id="vault-page">
             <div class="page-header">
                 <h2><i class="fas fa-vault"></i> Secure Vault Contents</h2>
             </div>
-            
+
             <div class="page-content">
                 <div class="vault-content">
                     <div class="vault-item">
                         <h3><i class="fas fa-key"></i> Access Codes</h3>
-                        <p>Secure access credentials for various systems:</p>
-                        <div class="content">
-                            <p>Main Server: admin | JLK#29$fds8</p>
-                            <p>Database: root | 9Hj*23kL!zxc</p>
-                            <p>WiFi Network: SecureCorp | WPA2-Enterprise</p>
-                            <p>Backup System: backup | B@ckUp!2023</p>
-                        </div>
+                        <textarea id="access-codes" class="vault-textarea" rows="5" placeholder="Enter your access codes..."></textarea>
                     </div>
-                    
+
                     <div class="vault-item">
                         <h3><i class="fas fa-file-contract"></i> Confidential Documents</h3>
-                        <p>Links to sensitive documents and files:</p>
-                        <div class="content">
-                            <p>Merger Agreement: https://vault.example/merger.pdf</p>
-                            <p>Financial Report: https://vault.example/finance2023.xlsx</p>
-                            <p>Product Roadmap: https://vault.example/roadmap.pptx</p>
-                            <p>Employee Records: https://vault.example/hr-records.zip</p>
-                        </div>
+                        <textarea id="documents" class="vault-textarea" rows="5" placeholder="Enter your document links..."></textarea>
                     </div>
-                    
+
                     <div class="vault-item">
                         <h3><i class="fas fa-coins"></i> Crypto Wallets</h3>
-                        <p>Recovery phrases for cryptocurrency wallets:</p>
-                        <div class="content">
-                            <p>Bitcoin: ocean forest mountain desert sun river tree star cloud</p>
-                            <p>Ethereum: desert mountain ocean forest star cloud tree river sun</p>
-                            <p>Monero: forest desert mountain ocean cloud sun river tree star</p>
-                        </div>
+                        <textarea id="wallets" class="vault-textarea" rows="5" placeholder="Enter your recovery phrases..."></textarea>
                     </div>
-                    
+
                     <div class="vault-item">
                         <h3><i class="fas fa-sticky-note"></i> Secure Notes</h3>
-                        <p>Important information and reminders:</p>
-                        <div class="content">
-                            <p>🔒 Safe Combination: 38-12-24</p>
-                            <p>🔑 Backup Key Location: Behind the painting in conference room</p>
-                            <p>💼 Emergency Contact: John Smith - 555-0199</p>
-                            <p>⚠️ Security Protocol: Activate when leaving for more than 2 days</p>
-                        </div>
+                        <textarea id="notes" class="vault-textarea" rows="5" placeholder="Enter your notes..."></textarea>
                     </div>
                 </div>
-                
+
                 <div class="vault-footer">
+                    <button id="save-vault-btn"><i class="fas fa-save"></i> Save Vault</button>
                     <button id="lock-vault"><i class="fas fa-lock"></i> Lock Vault</button>
                     <button id="change-pattern" style="margin-top: 15px;"><i class="fas fa-sync-alt"></i> Change Pattern</button>
                 </div>
