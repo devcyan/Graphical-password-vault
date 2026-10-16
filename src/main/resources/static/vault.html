@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Vault Contents</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-lock"></i> Graphical Password Vault</h1>
+            <p>Secure digital vault containing confidential information</p>
+        </header>
+
+        <div class="page active" id="vault-page">
+            <div class="page-header">
+                <h2><i class="fas fa-vault"></i> Secure Vault Contents</h2>
+            </div>
+
+            <div class="page-content">
+                <div class="vault-content">
+                    <div class="vault-item">
+                        <h3><i class="fas fa-key"></i> Access Codes</h3>
+                        <textarea id="access-codes" class="vault-textarea" rows="5" placeholder="Enter your access codes..."></textarea>
+                    </div>
+
+                    <div class="vault-item">
+                        <h3><i class="fas fa-file-contract"></i> Confidential Documents</h3>
+                        <textarea id="documents" class="vault-textarea" rows="5" placeholder="Enter your document links..."></textarea>
+                    </div>
+
+                    <div class="vault-item">
+                        <h3><i class="fas fa-coins"></i> Crypto Wallets</h3>
+                        <textarea id="wallets" class="vault-textarea" rows="5" placeholder="Enter your recovery phrases..."></textarea>
+                    </div>
+
+                    <div class="vault-item">
+                        <h3><i class="fas fa-sticky-note"></i> Secure Notes</h3>
+                        <textarea id="notes" class="vault-textarea" rows="5" placeholder="Enter your notes..."></textarea>
+                    </div>
+                </div>
+
+                <div class="vault-footer">
+                    <button id="save-vault-btn"><i class="fas fa-save"></i> Save Vault</button>
+                    <button id="lock-vault"><i class="fas fa-lock"></i> Lock Vault</button>
+                    <button id="change-pattern" style="margin-top: 15px;"><i class="fas fa-sync-alt"></i> Change Pattern</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="js/vault.js"></script>
+</body>
+</html>
